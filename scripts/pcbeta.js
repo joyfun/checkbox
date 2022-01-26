@@ -11,7 +11,7 @@ function pcbeta() {
       };
       let res = await axios.get(url, header);
       if (res.data) {
-        data = res.data
+        data = "签到成功"
       } else {
         data = res.data.error_msg;
       }
