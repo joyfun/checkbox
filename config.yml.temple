@@ -91,6 +91,10 @@ jjwxc:
 #什么值得买网页端 全部cookie
 smzdm:
   cookie: 
+
+#远景论坛 全部cookie
+pcbeta:
+  cookie: 
   
 #网易云游戏网页端  请求头里
 cg163:
