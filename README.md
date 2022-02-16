@@ -82,6 +82,8 @@
  - [x] [立创](https://oshwhub.com)每日签到
  - [x] [捷配](https://www.jiepei.com/Member)每日签到
  - [x] [花火论坛](www.sayhuahuo.com)每日签到
+ - [x] [17k小说](https://www.17k.com/)每日签到
+ - [x] [触站](https://m.huashi6.com/app)每日签到任务
 </details>
  
 # 使用方法 (懂得自然懂 bushi  
@@ -111,17 +113,20 @@ termux可以使用crontab设置定时任务
 ## 青龙使用教程
   
 ```
-ql repo https://github.com/Wenmoux/checkbox.git "index|install" "" "modules|scripts|config|Template|sendmsg"
+ql repo https://github.com/Wenmoux/checkbox.git "checkbox|install" "" "modules|scripts|config|Template|sendmsg"
 ```
- > 1 首先在青龙目录下config.sh设置里拉取sh后缀文件 大概这个自己找RepoFileExtensions="js py sh"    
+ > 1 首先在青龙目录下config.sh设置里拉取sh后缀文件 大概这个自己找RepoFileExtensions  = xxx这一行 里边加上sh就可以了    
  2 在面板内添加定时任务 (上面ql repo那条 定时看你)    
- 3 手动运行签到盒安装任务 成功后请禁用  
+ 3 手动运行签到盒安装任务 无需禁用  
  4 在`ql/config/config.yml`里填写cookie以及需要运行的任务列表(开头cbList)等信息    
 
 # other
 <details>
 <summary>更新日志</summary>
 
+- 2022-02-14 新增触站app每日任务
+- 2022-02-13 增加部分好游快爆每日任务
+- 2022-02-05 新增17k小说每日签到/修复村花论坛签到
 - 2022-01-03 新增埋堆堆激励视频任务
 - 2021-11-15  [花火论坛](www.sayhuahuo.com)每日签到
 - 2021-10-24 

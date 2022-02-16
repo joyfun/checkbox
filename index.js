@@ -1,7 +1,4 @@
-/*
-cron: 28 8 * * *
-new Env('签到盒');
-*/
+// 云函数使用
 const yaml = require("js-yaml");
 const fs = require('fs');
 const yargs = require('yargs');
@@ -26,7 +23,6 @@ if (QL) {
 }
 if(config) signlist = config.cbList.split("&")
 var signList = (argv._.length) > 0 ? argv._ : (cbList.length>0 ? cbList : signlist) 
-if (config &&  process.env.TENCENTCLOUD_RUNENV!="SCF") start(signList);
 function start(taskList) {
     return new Promise(async (resolve) => {
         try {     
