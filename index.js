@@ -48,7 +48,7 @@ function start(taskList) {
         resolve();
     });
 }
-
+if (config &&  process.env.TENCENTCLOUD_RUNENV!="SCF") start(signList);//修复青龙面板等不执行
 //云函数入口
 exports.main_handler = async () => {
   await start(signList);
